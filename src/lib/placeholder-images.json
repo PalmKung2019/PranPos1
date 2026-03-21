@@ -1,0 +1,106 @@
+{
+  "placeholderImages": [
+    {
+      "id": "1",
+      "description": "Signature Bear Latte",
+      "imageUrl": "https://images.unsplash.com/photo-1570968015849-df401d222899?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "bear latte"
+    },
+    {
+      "id": "2",
+      "description": "Fluffy Cappuccino",
+      "imageUrl": "https://images.unsplash.com/photo-1572442388796-11668a67e13a?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "cappuccino"
+    },
+    {
+      "id": "3",
+      "description": "Caramel Macchiato",
+      "imageUrl": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "caramel macchiato"
+    },
+    {
+      "id": "4",
+      "description": "Premium Uji Matcha Latte",
+      "imageUrl": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "matcha latte"
+    },
+    {
+      "id": "5",
+      "description": "Classic Thai Milk Tea",
+      "imageUrl": "https://images.unsplash.com/photo-1594631252845-29fc4586c552?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "thai tea"
+    },
+    {
+      "id": "6",
+      "description": "Butter Croissant",
+      "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "croissant"
+    },
+    {
+      "id": "7",
+      "description": "Almond Croissant",
+      "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "almond croissant"
+    },
+    {
+      "id": "8",
+      "description": "Garlic Butter Bread",
+      "imageUrl": "https://images.unsplash.com/photo-1619531005810-7389f67a245d?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "garlic bread"
+    },
+    {
+      "id": "9",
+      "description": "Ham & Cheese Toast",
+      "imageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "ham cheese"
+    },
+    {
+      "id": "10",
+      "description": "New York Cheesecake",
+      "imageUrl": "https://images.unsplash.com/photo-1524350303359-301ec9747970?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "cheesecake"
+    },
+    {
+      "id": "11",
+      "description": "Strawberry Shortcake",
+      "imageUrl": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "strawberry cake"
+    },
+    {
+      "id": "12",
+      "description": "Fudge Chocolate Brownie",
+      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "brownie"
+    },
+    {
+      "id": "13",
+      "description": "Warm Apple Pie",
+      "imageUrl": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "apple pie"
+    },
+    {
+      "id": "14",
+      "description": "Honey Lemon Soda",
+      "imageUrl": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2ff?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "lemon soda"
+    },
+    {
+      "id": "15",
+      "description": "Premium Iced Cocoa",
+      "imageUrl": "https://images.unsplash.com/photo-1544787210-2213d84ad960?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "iced cocoa"
+    },
+    {
+      "id": "16",
+      "description": "Signature Nom Yen",
+      "imageUrl": "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "pink milk"
+    },
+    {
+      "id": "17",
+      "description": "Truffle Sea Salt Fries",
+      "imageUrl": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=800&auto=format&fit=crop",
+      "imageHint": "truffle fries"
+    }
+  ]
+}

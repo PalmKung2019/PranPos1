@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 33 33% 95%; /* Warm Cream #F5F2EF */
+    --foreground: 36 60% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 36 60% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 36 60% 10%;
+    --primary: 36 60% 40%; /* Deep Coffee Brown #A37028 */
+    --primary-foreground: 30 20% 98%;
+    --secondary: 40 87% 95%;
+    --secondary-foreground: 40 87% 20%;
+    --muted: 30 10% 90%;
+    --muted-foreground: 30 10% 40%;
+    --accent: 40 87% 40%; /* Golden-brown #B78114 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 20% 85%;
+    --input: 36 20% 85%;
+    --ring: 36 60% 40%;
+    --radius: 2.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.pranz-shadow {
+  box-shadow: 0 10px 30px -10px rgba(163, 112, 40, 0.15);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

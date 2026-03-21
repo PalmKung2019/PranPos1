@@ -1,0 +1,71 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isManager() {
+      return isSignedIn() && exists(/databases/$(database)/documents/roles_manager/$(request.auth.uid));
+    }
+
+    function isStaff() {
+      return isSignedIn() && exists(/databases/$(database)/documents/roles_staff/$(request.auth.uid));
+    }
+
+    function isStaffOrManager() {
+      return isStaff() || isManager();
+    }
+
+    // User Profiles
+    match /user_profiles/{userId} {
+      allow get: if isOwner(userId) || isStaffOrManager();
+      allow list: if isStaffOrManager();
+      allow create: if isOwner(userId);
+      allow update: if isOwner(userId) || isStaffOrManager();
+      allow delete: if isManager();
+    }
+
+    // Role Assignments
+    match /roles_manager/{userId} {
+      allow read: if isSignedIn();
+      allow write: if false; // Only manageable via Firebase Console for maximum security
+    }
+
+    match /roles_staff/{userId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn(); // Allow creation during initial signup for demo purposes
+      allow write: if isManager();
+    }
+
+    match /roles_customer/{userId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+      allow write: if isStaffOrManager() || isOwner(userId);
+    }
+
+    // Products
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if isStaffOrManager();
+    }
+
+    // Orders
+    match /orders/{orderId} {
+      allow read: if isSignedIn() && (isOwner(resource.data.customerId) || isStaffOrManager());
+      allow create: if isSignedIn();
+      allow update, delete: if isStaffOrManager();
+    }
+
+    // Chats
+    match /chats/{customerId}/messages/{messageId} {
+      allow read, write: if isOwner(customerId) || isStaffOrManager();
+    }
+  }
+}
