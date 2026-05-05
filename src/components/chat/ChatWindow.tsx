@@ -24,7 +24,7 @@ export function ChatWindow({ targetCustomerId, onClose, language }: ChatWindowPr
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const messagesRef = useMemoFirebase(() => {
-    if (!db || !targetCustomerId) return null;
+    if (!db || !targetCustomerId || targetCustomerId === 'guest') return null;
     return query(
       collection(db, 'chats', targetCustomerId, 'messages'),
       orderBy('timestamp', 'asc')

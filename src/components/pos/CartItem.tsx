@@ -3,13 +3,13 @@
 import React from 'react';
 import { Minus, Plus, Trash2, Edit2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Product, Topping, IceOption } from '@/lib/mock-data';
+import { Product, IceOption } from '@/lib/mock-data';
 import { motion } from 'framer-motion';
 
 interface CartItemProps {
   item: Product & { 
     quantity: number; 
-    selectedToppings: Topping[];
+    selectedToppings: any[];
     iceOption?: IceOption;
     uniqueId: string;
   };

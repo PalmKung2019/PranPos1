@@ -23,7 +23,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 95,
     description: 'Smooth, velvety latte topped with signature bear foam.',
     descriptionTh: 'ลาเต้รสนุ่มละมุน ตกแต่งด้วยฟองนมน้องหมีสุดน่ารัก',
-    imageUrl: 'https://images.unsplash.com/photo-1570968015849-df401d222899?q=80&w=800',
+    imageUrl: '/images/bear_latte.png',
     hasIceOptions: true,
     isBestSeller: true
   },
@@ -35,7 +35,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85,
     description: 'Intense espresso meets airy milk foam.',
     descriptionTh: 'เอสเพรสโซ่เข้มข้น ผสมผสานกับฟองนมหนานุ่ม',
-    imageUrl: 'https://images.unsplash.com/photo-1572442388796-11668a67e13a?q=80&w=800',
+    imageUrl: '/images/cappuccino.png',
     hasIceOptions: true
   },
   {
@@ -46,7 +46,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 105,
     description: 'Espresso, vanilla, and house-made caramel.',
     descriptionTh: 'เอสเพรสโซ่ วานิลลา และซอสคาราเมลเคี่ยวเอง',
-    imageUrl: 'https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=800',
+    imageUrl: '/images/caramel_macchiato.png',
     hasIceOptions: true
   },
   {
@@ -57,7 +57,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 125,
     description: 'Finest Uji matcha with silky milk.',
     descriptionTh: 'มัทฉะคัดเกรดพิเศษจากเมืองอูจิผสมนมสด',
-    imageUrl: 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?q=80&w=800',
+    imageUrl: '/images/matcha_latte.png',
     hasIceOptions: true,
     isBestSeller: true
   },
@@ -69,7 +69,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75,
     description: 'Bold Thai tea brewed and mixed with creamy milk.',
     descriptionTh: 'ใบชาไทยคัดเกรดต้มสดใหม่ ผสมกับนมรสนุ่ม',
-    imageUrl: 'https://images.unsplash.com/photo-1594631252845-29fc4586c552?q=80&w=800',
+    imageUrl: '/images/thai_tea.png',
     hasIceOptions: true
   },
   {
@@ -80,7 +80,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85,
     description: 'Golden, flaky layers of pure French butter.',
     descriptionTh: 'ชั้นแป้งบางกรอบสีทอง หอมกรุ่นกลิ่นเนยแท้',
-    imageUrl: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800',
+    imageUrl: '/images/butter_croissant.png',
     isBestSeller: true
   },
   {
@@ -91,7 +91,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 105,
     description: 'Twice-baked croissant with almond frangipane.',
     descriptionTh: 'ครัวซองต์อบซ้ำจนกรอบ สอดไส้ครีมอัลมอนด์',
-    imageUrl: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800'
+    imageUrl: '/images/almond_croissant.png'
   },
   {
     id: '8',
@@ -101,7 +101,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 115,
     description: 'Soft bread infused with roasted garlic.',
     descriptionTh: 'ขนมปังเนื้อนุ่มชุ่มเนยกระเทียมหอมกรุ่น',
-    imageUrl: 'https://images.unsplash.com/photo-1619531005810-7389f67a245d?q=80&w=800'
+    imageUrl: '/images/garlic_bread.png'
   },
   {
     id: '9',
@@ -111,7 +111,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 125,
     description: 'Golden toast stuffed with premium ham and cheese.',
     descriptionTh: 'ขนมปังปิ้งสีทอง อัดแน่นด้วยแฮมและชีสเยิ้มๆ',
-    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800'
+    imageUrl: '/images/ham_cheese_toast.png'
   },
   {
     id: '10',
@@ -121,7 +121,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 145,
     description: 'Ultra-creamy cheesecake on a graham crust.',
     descriptionTh: 'ชีสเค้กเนื้อเนียนนุ่ม ตัดกับฐานแครกเกอร์กรอบ',
-    imageUrl: 'https://images.unsplash.com/photo-1524350303359-301ec9747970?q=80&w=800'
+    imageUrl: '/images/ny_cheesecake.png'
   },
   {
     id: '11',
@@ -131,7 +131,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 135,
     description: 'Light sponge cake with strawberries and cream.',
     descriptionTh: 'สปันจ์เค้กเนื้อนุ่มสลับชั้นกับสตรอว์เบอร์รี่สด',
-    imageUrl: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=800',
+    imageUrl: '/images/strawberry_shortcake.png',
     isBestSeller: true
   },
   {
@@ -142,7 +142,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 95,
     description: 'Rich dark chocolate brownie. Pure bliss.',
     descriptionTh: 'บราวนี่เนื้อหนึบหนับ เข้มข้นด้วยช็อกโกแลตแท้',
-    imageUrl: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=800'
+    imageUrl: '/images/brownie.png'
   },
   {
     id: '13',
@@ -152,7 +152,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 155,
     description: 'Classic apple pie with cinnamon-spiced filling.',
     descriptionTh: 'พายแอปเปิ้ลต้นตำรับ สอดไส้แอปเปิ้ลผัดซินนามอน',
-    imageUrl: 'https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?q=80&w=800'
+    imageUrl: '/images/apple_pie.png'
   },
   {
     id: '14',
@@ -162,7 +162,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85,
     description: 'Refreshing lemon juice with wild honey and soda.',
     descriptionTh: 'น้ำเลมอนคั้นสดผสมน้ำผึ้งป่าและโซดาซ่าสดชื่น',
-    imageUrl: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2ff?q=80&w=800',
+    imageUrl: '/images/honey_lemon_soda.png',
     hasIceOptions: true
   },
   {
@@ -173,7 +173,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 85,
     description: 'Rich and intense dark cocoa with fresh milk.',
     descriptionTh: 'โกโก้รสเข้มข้น ผสมผสานกับนมสดรสนุ่ม',
-    imageUrl: 'https://images.unsplash.com/photo-1544787210-2213d84ad960?q=80&w=800',
+    imageUrl: '/images/iced_cocoa.png',
     hasIceOptions: true,
     isBestSeller: true
   },
@@ -185,7 +185,7 @@ export const MOCK_PRODUCTS: Product[] = [
     price: 75,
     description: 'Iconic Thai pink milk. A nostalgic delight.',
     descriptionTh: 'นมชมพูสูตรลับเฉพาะ รสชาติหอมหวานละมุน',
-    imageUrl: 'https://images.unsplash.com/photo-1553177595-4de2bb0842b9?q=80&w=800',
+    imageUrl: '/images/nom_yen.png',
     hasIceOptions: true
   },
   {

@@ -17,14 +17,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Badge } from "@/components/ui/badge";
 import { Logo } from '@/components/brand/Logo';
 import { useRouter } from 'next/navigation';
-import { ChevronLeft, Plus, Edit2, Trash2, RefreshCw, ShieldAlert, Globe } from 'lucide-react';
-import { MOCK_PRODUCTS } from '@/lib/mock-data';
+import { ChevronLeft, Plus, Edit2, Trash2, ShieldAlert } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { translations } from '@/lib/translations';
 import { playClickSound } from '@/lib/audio-utils';
@@ -225,7 +223,7 @@ export default function AdminProductsPage() {
       </div>
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="rounded-[3rem] p-8 bg-white max-w-lg border-none shadow-2xl">
+        <DialogContent aria-describedby={undefined} className="rounded-[3rem] p-8 bg-white max-w-lg border-none shadow-2xl">
           <DialogHeader>
             <DialogTitle className="text-2xl font-headline font-bold text-primary">
               {editingProduct ? t.editProduct : t.addNewProduct}
